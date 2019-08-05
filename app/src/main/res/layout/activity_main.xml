@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:ignore="RtlSymmetry"
     tools:context=".MainActivity">
 
@@ -26,16 +27,16 @@
                 android:layout_height="wrap_content"/>
 
             <Button
+                style="@style/Widget.AppCompat.ActionButton"
                 android:layout_gravity="end"
                 android:drawableStart="@drawable/ic_feed"
-                style="@style/Widget.AppCompat.ActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <Button
+                style="@style/Widget.AppCompat.ActionButton"
                 android:layout_gravity="end"
                 android:drawableStart="@drawable/ic_notifications"
-                style="@style/Widget.AppCompat.ActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -70,8 +71,6 @@
                 app:tabInlineLabel="true"
                 app:tabIndicatorGravity="stretch"
                 app:tabIndicatorColor="@color/gray"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -119,7 +118,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:text="@string/see_all"
                     android:layout_gravity="end"
                     android:layout_width="wrap_content"
@@ -130,11 +130,12 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:background="@color/gray"
+                android:padding="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <FrameLayout
-                    android:padding="12dp"
+                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -154,7 +155,7 @@
                 </FrameLayout>
 
                 <FrameLayout
-                    android:padding="12dp"
+                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -174,7 +175,7 @@
                 </FrameLayout>
 
                 <FrameLayout
-                    android:padding="12dp"
+                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
