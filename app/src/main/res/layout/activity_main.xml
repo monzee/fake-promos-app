@@ -63,7 +63,7 @@
             <ImageView
                 android:src="@drawable/hamburger"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/hero_placeholder"
+                android:contentDescription="@string/placeholder"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"/>
 
@@ -89,13 +89,14 @@
             </com.google.android.material.tabs.TabLayout>
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
                 android:background="@color/gray"
-                android:contentDescription="@string/latest_promo_placeholder"
-                android:padding="12dp"
+                android:contentDescription="@string/placeholder"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/kfc"/>
+                android:src="@drawable/kfc"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
 
             <FrameLayout
                 android:paddingStart="12dp"
@@ -105,7 +106,7 @@
 
                 <ImageView
                     android:src="@drawable/ic_star"
-                    android:contentDescription="@string/a_star"
+                    android:contentDescription="@string/placeholder"
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -113,7 +114,7 @@
                 <TextView
                     android:text="@string/popular"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                    android:paddingStart="30dp"
+                    android:layout_marginStart="30dp"
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -141,7 +142,7 @@
 
                     <ImageView
                         android:src="@drawable/pancake"
-                        android:contentDescription="@string/pancake_placeholder"
+                        android:contentDescription="@string/placeholder"
                         android:scaleType="centerCrop"
                         android:layout_width="160dp"
                         android:layout_height="90dp"/>
@@ -149,9 +150,10 @@
                     <TextView
                         android:text="@string/pancake_house"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:paddingStart="172dp"
+                        android:layout_marginStart="172dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                 </FrameLayout>
 
                 <FrameLayout
@@ -161,7 +163,7 @@
 
                     <ImageView
                         android:src="@drawable/pancake"
-                        android:contentDescription="@string/pancake_placeholder"
+                        android:contentDescription="@string/placeholder"
                         android:scaleType="centerCrop"
                         android:layout_width="160dp"
                         android:layout_height="90dp"/>
@@ -169,9 +171,10 @@
                     <TextView
                         android:text="@string/pancake_house"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:paddingStart="172dp"
+                        android:layout_marginStart="172dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                 </FrameLayout>
 
                 <FrameLayout
@@ -181,7 +184,7 @@
 
                     <ImageView
                         android:src="@drawable/pancake"
-                        android:contentDescription="@string/pancake_placeholder"
+                        android:contentDescription="@string/placeholder"
                         android:scaleType="centerCrop"
                         android:layout_width="160dp"
                         android:layout_height="90dp"/>
@@ -189,9 +192,10 @@
                     <TextView
                         android:text="@string/pancake_house"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:paddingStart="172dp"
+                        android:layout_marginStart="172dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                 </FrameLayout>
 
             </LinearLayout>
