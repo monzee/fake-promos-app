@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlSymmetry"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:liftOnScroll="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/welcome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+                android:drawableStart="@drawable/ic_account"
+                android:drawablePadding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_gravity="end"
+                android:drawableStart="@drawable/ic_feed"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_gravity="end"
+                android:drawableStart="@drawable/ic_notifications"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SearchView
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/search_promos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/hamburger"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/hero_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabInlineLabel="true"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorColor="@color/gray"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/latest_promo"
+                    android:icon="@drawable/ic_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/my_interest"
+                    android:icon="@drawable/ic_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/latest_promo_placeholder"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kfc"/>
+
+            <FrameLayout
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_star"
+                    android:contentDescription="@string/a_star"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/popular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:paddingStart="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="@string/see_all"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/pancake"
+                        android:contentDescription="@string/pancake_placeholder"
+                        android:scaleType="centerCrop"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="@string/pancake_house"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:paddingStart="172dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/pancake"
+                        android:contentDescription="@string/pancake_placeholder"
+                        android:scaleType="centerCrop"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="@string/pancake_house"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:paddingStart="172dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/pancake"
+                        android:contentDescription="@string/pancake_placeholder"
+                        android:scaleType="centerCrop"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="@string/pancake_house"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:paddingStart="172dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
